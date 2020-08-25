@@ -1,6 +1,6 @@
 # Reverse-Shell-TTY-Cheat-Sheet
 Simple TTY cheat sheet for shell stabilization
-Prevents you from nerving your reverse shells and adds proper shell functionality
+Prevents you from killing your reverse shells and adds proper shell functionality
 
 - Python
 - Script
@@ -36,5 +36,8 @@ stty raw -echo
 fg
 ENTER
 ENTER
+
+Victim
+
 export TERM=xterm
 ```
