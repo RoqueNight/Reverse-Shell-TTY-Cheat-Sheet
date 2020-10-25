@@ -40,4 +40,5 @@ ENTER
 Victim
 
 export TERM=xterm
+stty cols 132 rows 34
 ```
